@@ -17,7 +17,6 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "svelte-spa-router": "^3.0.4",
-    "regexparam": "^2.0.0"
+    "svelte-spa-router": "^3.0.4"
   }
 }
