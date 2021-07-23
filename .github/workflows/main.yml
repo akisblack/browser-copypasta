@@ -7,6 +7,7 @@ on:
     paths:
       - 'src/**'
       - 'public/**'
+      - 'public'
       - '.github/**'
       - 'README.md'
 jobs:
@@ -32,7 +33,7 @@ jobs:
           npm run build
           #cp CNAME out/ -- Only add when I have a domain
           cp README.md out/
-          rsync -vauW public out/
+          rsync -vauW public/ out/
           cd out
           git add --all .
           git config user.name "${GITHUB_ACTOR}"
