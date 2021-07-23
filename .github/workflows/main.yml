@@ -10,6 +10,7 @@ on:
       - 'public'
       - '.github/**'
       - 'README.md'
+      - '*'
 jobs:
   Build: 
     name: 'Build'
