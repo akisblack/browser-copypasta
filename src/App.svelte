@@ -43,7 +43,7 @@
 						<a href="/#/brave">Brave</a>
 					</div>
 				  </div> 
-                <button on:click={copyText}>Copy Text (broken)</button>
+                <button on:click={copyText}>Copy Text</button>
 			</ul>
             <div id="snackbar">
                 <p id="snackbarText">✔️Copied to clipboard.</p>

@@ -32,6 +32,7 @@ button {
 	color: black;
 	padding-left: 20px;
 	padding-right: 20px;
+	cursor: grab;
 }
 
 @media screen and (max-width: 406px) {
@@ -103,8 +104,9 @@ input {
     width: 100%;
     background-color: #272727;
     color: #fff;
-    border-radius: 15px;
+    border-radius: 5px;
     border: 2px solid aqua;
+	outline: none;
 }
 
 #text {
@@ -112,6 +114,9 @@ input {
 	top: 10px;
 }
 
+#text > p {
+	line-height: 40px;
+}
 
 .links a {
 	color: #FFF;
@@ -143,7 +148,6 @@ p {
 	bottom: 1px;
 	left: 30%;
 	width: 10%;
-	height: 3%;
 	background-color: #272727;
 	color: #fff;
 	text-align: center;
@@ -162,9 +166,9 @@ p {
 @media screen and (max-height: 920px) {
 
 	.links {
-	padding-top: 25px;
-	position: relative;
-	padding-right: 100px;
-	overflow: hidden;
+		padding-top: 25px;
+		position: relative;
+		padding-right: 100px;
+		overflow: hidden;
 	}
 }
