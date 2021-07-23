@@ -14,6 +14,6 @@ jobs:
         with:
           access-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-branch: gh-pages
-          source-directory: build
+          source-directory: public/build
           build-command: npm run build
 
