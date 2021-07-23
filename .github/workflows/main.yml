@@ -16,4 +16,3 @@ jobs:
           deploy-branch: gh-pages
           source-directory: public/build
           build-command: npm run build
-
