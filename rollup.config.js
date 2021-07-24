@@ -35,6 +35,7 @@ export default {
 		format: 'iife',
 		name: 'app',
 		dir: 'public/',
+		chunkFileNames: 'bundle.js'
 	},
 	plugins: [
 		svelte({
