@@ -35,6 +35,7 @@ jobs:
           #cp CNAME out/ -- Only add when I have a domain
           cp README.md out/
           rsync -vauW public/ out/
+          rsync -vauW public/build/ out/
           cd out
           git add --all .
           git config user.name "${GITHUB_ACTOR}"
