@@ -1,3 +1,3 @@
 <h2>Not Found</h2>
 
-<p>Oops, this route doesn't exist!</p>
+<p>Oops, this copypasta doesn't exist!</p>
