@@ -258,7 +258,7 @@ function scrollstateHistoryHandler(href) {
 
 <script>
 import {onDestroy, createEventDispatcher, afterUpdate} from 'svelte'
-import regexparam from 'regexparam';
+import { parse } from 'regexparam';
 
 /**
  * Dictionary of all routes, in the format `'/path': component`.
