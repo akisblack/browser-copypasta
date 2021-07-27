@@ -40,7 +40,7 @@
 					<button class="dropbtn">Switch Browser</button>
 					<div class="dropdown-content">
 						<a href="#/">Vivaldi</a>
-						<a href="/#/brave">Brave</a>
+						<a href="#/brave">Brave</a>
 					</div>
 				  </div> 
                 <button on:click={copyText}>Copy Text</button>
