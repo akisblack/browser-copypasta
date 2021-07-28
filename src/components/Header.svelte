@@ -16,12 +16,6 @@
 </header>
 
 <script>
-	window.addEventListener('input', function (e) {
-    	document.getElementsByName("insert").forEach(function(value) {
-        value.innerHTML = document.getElementById("userInput").value;
-    })
-    }, false);
-
 	export function copyText() {
 	var content = document.getElementById("text").innerText; //get text from copypasta
 	try { // try this
