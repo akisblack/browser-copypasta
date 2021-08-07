@@ -114,10 +114,6 @@ input {
 	top: 10px;
 }
 
-#text > p {
-	line-height: 40px;
-}
-
 .links a {
 	color: #FFF;
 	display: inline-flex;
@@ -171,4 +167,8 @@ p {
 		padding-right: 100px;
 		overflow: hidden;
 	}
+}
+
+pre {
+	white-space: pre-wrap;
 }
