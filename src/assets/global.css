@@ -2,6 +2,7 @@ body {
 	background-color: black;
 	font-family: Mulish;
 	margin:0;
+	max-width: min-content;
 }
 
 @font-face {
@@ -164,7 +165,6 @@ p {
 	.links {
 		padding-top: 25px;
 		position: relative;
-		padding-right: 100px;
 		overflow: hidden;
 	}
 }
@@ -172,4 +172,5 @@ p {
 pre {
 	white-space: pre-wrap;
 	font-family: Mulish;
+	text-align: justify;
 }
