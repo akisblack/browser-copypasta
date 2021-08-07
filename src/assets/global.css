@@ -2,7 +2,6 @@ body {
 	background-color: black;
 	font-family: Mulish;
 	margin:0;
-	max-width: min-content;
 }
 
 @font-face {
@@ -160,6 +159,12 @@ p {
 	visibility: visible; /* Show the snackbar */
 }
 
+pre {
+	white-space: pre-wrap;
+	font-family: Mulish;
+	text-align: justify;
+}
+
 @media screen and (max-height: 920px) {
 
 	.links {
@@ -167,10 +172,8 @@ p {
 		position: relative;
 		overflow: hidden;
 	}
-}
 
-pre {
-	white-space: pre-wrap;
-	font-family: Mulish;
-	text-align: justify;
+	body {
+		max-width: max-content;
+	}
 }
