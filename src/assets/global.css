@@ -2,7 +2,6 @@ body {
 	background-color: black;
 	font-family: Mulish;
 	margin:0;
-	max-width: min-content;
 }
 
 @font-face {
