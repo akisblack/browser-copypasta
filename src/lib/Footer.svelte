@@ -20,7 +20,7 @@
 			text-decoration: none;
 		}
 
-	@media (max-width: 982px) {
+	@media (max-width: 984px) {
 		& {
 			position: relative;
 		}

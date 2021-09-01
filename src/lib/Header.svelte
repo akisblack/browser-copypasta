@@ -1,11 +1,11 @@
 <header>
-	<h1 class="title">Browser Copypasta</h1>
+	<h1><a href="/" class="title">Browser Copypasta</a></h1>
 		<ul>
 			<div class="dropdown">
-				<button class="dropbtn">Switch Browser</button>
+				<button class="dropbtn">Choose Browser</button>
 				<div class="dropdown-content">
-					<a href="/">Vivaldi</a>
-					<a href="/brave">Brave</a>
+					<a href="/copypastas/vivaldi">Vivaldi</a>
+					<a href="/copypastas/brave">Brave</a>
 				</div>
 			  </div> 
 			<button on:click={copyText}>Copy Text</button>
