@@ -10,21 +10,16 @@
 <style lang="postcss">
 	.links {
 		position: fixed;
-		bottom: 10px;
-		width: 100%;
-		padding-top: 2em;
+		bottom: 0px;
+		width: 99%;
+		padding: 1%;
+		background-color: var(--bg-color-400);
 
 		& a {
 			color: #FFF;
 			display: inline-flex;
 			text-decoration: none;
 		}
-
-	@media (max-width: 984px) {
-		& {
-			position: relative;
-		}
-	}
 	}
 
 	hr {

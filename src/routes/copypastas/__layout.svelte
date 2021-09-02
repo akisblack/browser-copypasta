@@ -10,7 +10,8 @@
 	:global(#text) {
 		line-height: 25px;
 		text-align: justify;
-		color: #fff
+		color: #fff;
+		margin-bottom: 100px;
 	}
 
 	:global(#input) {
