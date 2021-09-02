@@ -47,7 +47,6 @@
 <style lang="postcss">
 	.title {
 		color: var(--accent);
-		margin-top: 10px;
 	}
 
 	button {
@@ -56,7 +55,7 @@
 		border: solid var(--accent);
 		color: var(--bg-color-400);
 		padding: 0.5em;
-		box-shadow: none;
+		margin-top: 10px;
 	}
 
 	@media screen and (max-width: 798px) {
@@ -74,19 +73,16 @@
 
 	/* Dropdown*/
 	.dropdown {
-	position: relative;
-	display: inline-block;
+		position: relative;
+		display: inline-block;
 	}
 
 	.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: var(--bg-color-400);
-	min-width: 25px;
-	border-radius: 8px;
-	border: solid var(--accent);
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
+		display: none;
+		position: absolute;
+		background-color: var(--bg-color-400);
+		border-radius: 8px;
+		border: solid var(--accent);
 		& a {
 			color: #fff;
 			padding: 12px 16px;
@@ -102,9 +98,5 @@
 
 	.dropdown:hover .dropdown-content {
 		display: block;
-	}
-
-	.dropbtn:hover {
-		border-bottom-left-radius: 0px;
 	}
 </style>
