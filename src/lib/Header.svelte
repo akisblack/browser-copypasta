@@ -6,6 +6,7 @@
 				<div class="dropdown-content">
 					<a href="/copypastas/vivaldi">Vivaldi</a>
 					<a href="/copypastas/brave">Brave</a>
+					<a href="/copypastas/wii">Wii Internet Channel</a>
 				</div>
 			  </div> 
 			<button on:click={copyText}>Copy Text</button>
