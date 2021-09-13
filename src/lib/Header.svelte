@@ -57,6 +57,7 @@
 		color: var(--bg-color-400);
 		padding: 0.5em;
 		margin-top: 10px;
+		cursor: pointer;
 	}
 
 	@media screen and (max-width: 798px) {
