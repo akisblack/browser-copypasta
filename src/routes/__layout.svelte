@@ -6,16 +6,12 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
 </svelte:head>
 
-<script lang="ts">
+<script>
 	import Header from '$lib/Header.svelte';
 	import Footer from "$lib/Footer.svelte";
-	import "../app.postcss";
+	import "../app.css";
 </script>
 
 <Header />
-
-<main>
-	<slot></slot>
-</main>
-
+<slot />
 <Footer />

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
 	--accent: #2ae9c9;
 	--bg-color-400: #3b3b3b;
@@ -17,8 +21,8 @@ body {
 
 a {
 	text-decoration: none;
+}
 
-	&:hover {
-		text-decoration: underline;
-	}
+a:hover {
+	text-decoration: underline;
 }

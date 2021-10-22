@@ -1,20 +1,21 @@
-<header>
-	<h1><a href="/" class="title">Browser Copypasta</a></h1>
-		<ul>
-			<div class="dropdown">
-				<button class="dropbtn">Choose Browser</button>
-				<div class="dropdown-content">
-					<a href="/copypastas/vivaldi">Vivaldi</a>
-					<a href="/copypastas/brave">Brave</a>
-					<a href="/copypastas/wii">Wii Internet Channel</a>
-				</div>
-			  </div> 
-			<button on:click={copyText}>Copy Text</button>
-		</ul>
-</header>
+<script context="module">
+	//get the article metadata
+	const pastaFiles = import.meta.glob("./../routes/_data/*.md");
+	let body = [];
+	for (const path in pastaFiles) {
+		body.push(pastaFiles[path]().then(({ metadata }) => metadata));
+	}
+	export async function load() {
+		const posts = await Promise.all(body);
+		return {
+			props: {
+				posts
+			}
+		};
+	}
+</script>
 
 <script>
-	//import Snackbar from "$lib/Snackbar.svelte";
 	import { browser } from '$app/env';
 
 	if (browser) {
@@ -26,30 +27,47 @@
 	}
 
 	export function copyText() {
-	var content = document.getElementById("text").innerText; //get text from copypasta
-	try { // try this
-		navigator.clipboard.writeText(content); //copy the copypasta
-		// Get the snackbar DIV
-		//var x = document.getElementById("snackbar");
+		var content = document.getElementById("text").innerText; //get text from copypasta
+		try { // try this
+			navigator.clipboard.writeText(content); //copy the copypasta
+			// Get the snackbar DIV
+			//var x = document.getElementById("snackbar");
 
-		// Add the "show" class to DIV
-		//x.className = "show";
+			// Add the "show" class to DIV
+			//x.className = "show";
 
-		// After 3 seconds, remove the show class from DIV
-		//setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+			// After 3 seconds, remove the show class from DIV
+			//setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+		}
+		catch { // something went wrong
+			console.log("We couldn't copy the copypasta. User-Agent:" + navigator.userAgent);
+			alert("Could not copy, please tell the creator of this site, include this: \n" + navigator.userAgent);
+		}
 	}
-	catch { // something went wrong
-		console.log("We couldn't copy the copypasta. User-Agent:" + navigator.userAgent);
-		alert("Could not copy, please tell the creator of this site, include this: \n" + navigator.userAgent);
-	}
-	}
+
+	export let posts;
 </script>
 
-<style lang="postcss">
-	.title {
-		color: var(--accent);
-	}
+<header class="m-[auto] mt-5 flex-row w-[70%] justify-between flex">
+	<h1><a href="/" class="text-green-400 text-3xl font-bold">Browser Copypasta</a></h1>
+		<ul>
+			<div class="dropdown">
+				<button class="dropbtn">Choose Browser</button>
+				<div class="dropdown-content">
+					<!-- doesnt work yet
+						{#each posts as h}
+							{#if h.published}
+								<a href={h.slug} class="item-name">{h.title}</a>
+							{/if}
+						{/each}
+					-->
+				</div>
+			  </div> 
+			<button on:click={copyText}>Copy Text</button>
+		</ul>
+</header>
 
+<style lang="postcss">
 	button {
 		background-color: var(--accent);
 		border-radius: 8px;
@@ -64,13 +82,6 @@
 		button:not(:first-child) {
 			margin-top: 1em;
 		}
-	}
-
-	header {
-		margin: 0 auto;
-		width: 70%;
-		display: flex;
-		justify-content: space-between;
 	}
 
 	/* Dropdown*/
