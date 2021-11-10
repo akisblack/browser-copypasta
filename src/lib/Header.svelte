@@ -1,20 +1,3 @@
-<script context="module">
-	//get the article metadata
-	const pastaFiles = import.meta.glob("./../routes/_data/*.md");
-	let body = [];
-	for (const path in pastaFiles) {
-		body.push(pastaFiles[path]().then(({ metadata }) => metadata));
-	}
-	export async function load() {
-		const posts = await Promise.all(body);
-		return {
-			props: {
-				posts
-			}
-		};
-	}
-</script>
-
 <script>
 	import { browser } from '$app/env';
 
@@ -45,72 +28,19 @@
 		}
 	}
 
-	export let posts;
+	import NavButton from "./NavButton.svelte";
 </script>
 
-<header class="m-[auto] mt-5 flex-row w-[70%] justify-between flex">
-	<h1><a href="/" class="text-green-400 text-3xl font-bold">Browser Copypasta</a></h1>
-		<ul>
-			<div class="dropdown">
-				<button class="dropbtn">Choose Browser</button>
-				<div class="dropdown-content">
-					<!-- doesnt work yet
-						{#each posts as h}
-							{#if h.published}
-								<a href={h.slug} class="item-name">{h.title}</a>
-							{/if}
-						{/each}
-					-->
-				</div>
-			  </div> 
-			<button on:click={copyText}>Copy Text</button>
-		</ul>
+<header class="bg-[#3b3b3b] p-6 flex items-center justify-between">
+	<h1 class="text-green-400 w-max text-2xl font-bold">Browser Copypasta</h1>
+	<div class="buttons">
+		<NavButton classes="mr-3 mdi mdi-clipboard-outline" on:click={copyText}>
+			Copy
+		</NavButton>
+		<a href="https://github.com/akisblack/browser-copypasta">
+			<NavButton classes="mdi mdi-github">
+				GitHub
+			</NavButton>
+		</a>
+	</div>
 </header>
-
-<style lang="postcss">
-	button {
-		background-color: var(--accent);
-		border-radius: 8px;
-		border: solid var(--accent);
-		color: var(--bg-color-400);
-		padding: 0.5em;
-		margin-top: 10px;
-		cursor: pointer;
-	}
-
-	@media screen and (max-width: 798px) {
-		button:not(:first-child) {
-			margin-top: 1em;
-		}
-	}
-
-	/* Dropdown*/
-	.dropdown {
-		position: relative;
-		display: inline-block;
-		z-index: 1;
-	}
-
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: var(--bg-color-400);
-		border-radius: 8px;
-		border: solid var(--accent);
-		& a {
-			color: #fff;
-			padding: 12px 16px;
-			text-decoration: none;
-			display: block;
-
-				&:hover {
-				background-color: #333333;
-				border-radius: 8px;
-			}
-		}
-	}
-
-	.dropdown:hover .dropdown-content {
-		display: block;
-	}
-</style>

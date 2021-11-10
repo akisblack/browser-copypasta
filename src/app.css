@@ -1,28 +1,4 @@
+/* Write your global styles here, in PostCSS syntax */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-	--accent: #2ae9c9;
-	--bg-color-400: #3b3b3b;
-	--bg-color: #191919;
-}
-
-body {
-	background-color: var(--bg-color);
-	font-family: Mulish;
-	margin:0;
-}
-
-@font-face {
-	font-family: Mulish;
-	src: url(/RobotoSlab-VariableFont_wght.ttf);
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}

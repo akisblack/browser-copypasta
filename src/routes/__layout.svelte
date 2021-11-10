@@ -1,17 +1,24 @@
 <svelte:head>
+	<!--Imports and viewport stuff-->
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Browser Copypasta</title>
-	<link rel='icon' type='image/png' href='/favicon.png'>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link
+		href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css"
+		rel="stylesheet"
+	/>
+	<link rel="shortcut icon" type="image/jpg" href="/img/favicon.png" />
+
+	<!--Embed metas-->
+	<meta name="theme-color" content="#39d687" />
+	<meta name="description" content="The copypasta generator for web browsers!" />
+	<meta name="author" content="akisblack" />
 </svelte:head>
 
 <script>
-	import Header from '$lib/Header.svelte';
-	import Footer from "$lib/Footer.svelte";
 	import "../app.css";
+	import Header from "$lib/Header.svelte";
 </script>
 
 <Header />
 <slot />
-<Footer />

@@ -5,7 +5,7 @@
 	export async function load({ page }) {
 		return {
 			props: {
-				Pasta: await import(`./../_data/${page.params.slug}.md`)
+				Pasta: await import(`./pastas/${page.params.slug}.md`)
 			}
 		};
 	}
@@ -17,10 +17,15 @@
 </script>
 
 <svelte:head>
-	<title>{Pasta.metadata.title} | Browser Copypasta</title>
+	<title>{Pasta.metadata.title} | Blog</title>
 </svelte:head>
 
 <div id="container">
+	<a href="/"> Home</a>
+	<h1>{Pasta.metadata.title}</h1>
+	<h2>{Pasta.metadata.date}, by {Pasta.metadata.author}</h2>
+	<hr />
+
 	<div class="content">
 		<svelte:component this={Pasta.default} />
 	</div>
