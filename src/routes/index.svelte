@@ -44,7 +44,7 @@
 		{#if published}
 			<div class="ml-3 first:ml-0 inline-flex items-center mt-4 m-auto">
 				<a rel="prefetch" href="copypastas/{slug}">
-					<NavButton classes="text-xl font-medium bg-gray-600">
+					<NavButton classes="text-xl font-medium">
 						{title}
 					</NavButton>
 				</a>

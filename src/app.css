@@ -9,14 +9,10 @@
 }
 
 body {
-	font-family: Raleway, sans-serif;
+	@apply bg-bg_primary font-font_primary;
 }
 
 .container {
 	max-width: 80%;
-	@apply m-auto
-}
-
-pre {
-	font-family: Raleway, sans-serif;
+	@apply m-auto;
 }

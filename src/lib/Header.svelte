@@ -21,10 +21,10 @@
 	import NavButton from "./NavButton.svelte";
 </script>
 
-<header class="bg-[#3b3b3b] p-6 flex items-center justify-between">
+<header class="bg-bg_secondary p-6 flex items-center justify-between">
 	<a href="/" class="text-green-400 w-max text-2xl font-bold">Browser Copypasta</a>
 	<div class="buttons">
-		<NavButton classes="mr-3 mdi mdi-clipboard-outline" on:click={copyText}>
+		<NavButton classes="mr-3 mdi mdi-clipboard-outline" fun={copyText}>
 			 Copy
 		</NavButton>
 		<a href="https://github.com/akisblack/browser-copypasta">
