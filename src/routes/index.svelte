@@ -38,7 +38,7 @@
 
 <div class="text-center mt-[15%] text-white">
 	<h1 class="font-normal text-3xl">The <span class="text-green-400 font-bold">BEST</span> copypasta generator for shilling browsers</h1>
-	<p class="leading-6 text-xl mt-1">Choose a browser from the cards below to start <span class="text-green-400 font-bold">spammin'</span>.</p>
+	<p class="leading-6 text-xl mt-1">Choose a browser from the list below to start <span class="text-green-400 font-bold">spammin'</span>.</p>
 
 	{#each pastas as { slug, title, published }}
 		{#if published}

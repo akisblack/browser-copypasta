@@ -6,7 +6,7 @@ const config = {
 
 	theme: {
 		colors: {
-			bg_secondary: "#141414",
+			bg_secondary: "#292929",
 			bg_primary: "#111111",
 			green: colors.emerald,
 			white: "#c8c8c8"

@@ -23,7 +23,7 @@
 
 <header class="bg-bg_secondary p-6 flex items-center justify-between">
 	<a href="/" class="text-green-400 w-max text-2xl font-bold">Browser Copypasta</a>
-	<div class="buttons">
+	<div class="buttons sm:mt-1 sm:first:mt-0">
 		<NavButton classes="mr-3 mdi mdi-clipboard-outline" fun={copyText}>
 			 Copy
 		</NavButton>
