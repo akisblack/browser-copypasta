@@ -1,5 +1,5 @@
 ---
-slug: vivald
+slug: vivaldi
 title: Vivaldi
 name: VIVALDI BROWSER
 published: true
