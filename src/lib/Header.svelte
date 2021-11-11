@@ -1,14 +1,4 @@
 <script>
-	import { browser } from '$app/env';
-
-	if (browser) {
-		window.addEventListener('input', function (e) {
-			document.getElementsByName("insert").forEach(function(value) {
-			value.innerHTML = document.getElementById("userInput").value;
-		})
-		}, false);
-	}
-
 	export function copyText() {
 		var content = document.getElementById("text").innerText; //get text from copypasta
 		try { // try this
@@ -32,7 +22,7 @@
 </script>
 
 <header class="bg-[#3b3b3b] p-6 flex items-center justify-between">
-	<h1 class="text-green-400 w-max text-2xl font-bold">Browser Copypasta</h1>
+	<a href="/" class="text-green-400 w-max text-2xl font-bold">Browser Copypasta</a>
 	<div class="buttons">
 		<NavButton classes="mr-3 mdi mdi-clipboard-outline" on:click={copyText}>
 			Copy
