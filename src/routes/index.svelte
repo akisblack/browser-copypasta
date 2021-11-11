@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Browser Copypasta</title>
+</svelte:head>
+
 <script context="module">
 	const pastaFiles = import.meta.glob("./_data/*.md");
 	let body = [];

@@ -25,11 +25,11 @@
 	<a href="/" class="text-green-400 w-max text-2xl font-bold">Browser Copypasta</a>
 	<div class="buttons">
 		<NavButton classes="mr-3 mdi mdi-clipboard-outline" on:click={copyText}>
-			Copy
+			 Copy
 		</NavButton>
 		<a href="https://github.com/akisblack/browser-copypasta">
 			<NavButton classes="mdi mdi-github">
-				GitHub
+				 GitHub
 			</NavButton>
 		</a>
 	</div>
