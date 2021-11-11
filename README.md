@@ -1,38 +1,62 @@
-# create-svelte
+# Browser Copypasta
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/akisblack/browser-copypasta/Build%20and%20Deploy?style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/akisblack/browser-copypasta?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/akisblack/browser-copypasta?style=for-the-badge)
+![Website](https://img.shields.io/website?down_color=red&down_message=offline&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fbrowsercp.tk)
 
-## Creating a project
+>Live version: https://browsercp.tk
 
-If you're seeing this, you've probably already done this step. Congrats!
+### A copypasta generator built with [SvelteKit](https://kit.svelte.dev). It uses MDsveX for markdown compiling and TailwindCSS for its CSS.
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
+---
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Prerequisites
+
+- Install [node.js](https://nodejs.org).
+- Learn [Svelte](https://svelte.dev).
+- Install [pnpm](https://pnpm.io).
+
+### Install dependencies
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm i
 ```
 
-## Building
+### Scripts
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
+#### `pnpm dev`
 
-```bash
-npm run build
+Runs a development server on http://localhost:3000.
+
+#### `pnpm build`
+
+Builds the project into the `build` folder.
+
+#### `pnpm preview`
+
+Runs the built project on http://localhost:3000.
+
+### Project structure
+```
+/src/routes/_data/ --> The folder where the pastas are located.
+```
+```
+All other directories should be in the SvelteKit docs.
 ```
 
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+### Pasta metadata
+- "slug" is the link your post will be on ex: https://example.com/blog/my-first-post.
+
+- "title" should be self explanatory.
+
+- "name" is the pasta's title in capitals.
+
+- "published" is a boolean. If true the post will display otherwise it will stay unpublished and not accessible anywhere outside the source code.
+
+---
+
+## License
+This project is licensed under the MIT license.

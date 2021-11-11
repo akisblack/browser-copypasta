@@ -1,0 +1,18 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: Raleway;
+	src: url(/raleway.ttf);
+}
+
+body {
+	@apply bg-bg_primary font-font_primary;
+}
+
+.container {
+	max-width: 80%;
+	@apply m-auto;
+}

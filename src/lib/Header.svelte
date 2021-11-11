@@ -1,105 +1,36 @@
-<header>
-	<h1><a href="/" class="title">Browser Copypasta</a></h1>
-		<ul>
-			<div class="dropdown">
-				<button class="dropbtn">Choose Browser</button>
-				<div class="dropdown-content">
-					<a href="/copypastas/vivaldi">Vivaldi</a>
-					<a href="/copypastas/brave">Brave</a>
-					<a href="/copypastas/wii">Wii Internet Channel</a>
-				</div>
-			  </div> 
-			<button on:click={copyText}>Copy Text</button>
-		</ul>
-</header>
-
 <script>
-	//import Snackbar from "$lib/Snackbar.svelte";
-	import { browser } from '$app/env';
-
-	if (browser) {
-		window.addEventListener('input', function (e) {
-			document.getElementsByName("insert").forEach(function(value) {
-			value.innerHTML = document.getElementById("userInput").value;
-		})
-		}, false);
-	}
-
 	export function copyText() {
-	var content = document.getElementById("text").innerText; //get text from copypasta
-	try { // try this
-		navigator.clipboard.writeText(content); //copy the copypasta
-		// Get the snackbar DIV
-		//var x = document.getElementById("snackbar");
+		var content = document.getElementById("text").innerText; //get text from copypasta
+		try { // try this
+			navigator.clipboard.writeText(content); //copy the copypasta
+			// Get the snackbar DIV
+			//var x = document.getElementById("snackbar");
 
-		// Add the "show" class to DIV
-		//x.className = "show";
+			// Add the "show" class to DIV
+			//x.className = "show";
 
-		// After 3 seconds, remove the show class from DIV
-		//setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+			// After 3 seconds, remove the show class from DIV
+			//setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+		}
+		catch { // something went wrong
+			console.log("We couldn't copy the copypasta. User-Agent:" + navigator.userAgent);
+			alert("Could not copy, please tell the creator of this site, include this: \n" + navigator.userAgent);
+		}
 	}
-	catch { // something went wrong
-		console.log("We couldn't copy the copypasta. User-Agent:" + navigator.userAgent);
-		alert("Could not copy, please tell the creator of this site, include this: \n" + navigator.userAgent);
-	}
-	}
+
+	import NavButton from "./NavButton.svelte";
 </script>
 
-<style lang="postcss">
-	.title {
-		color: var(--accent);
-	}
-
-	button {
-		background-color: var(--accent);
-		border-radius: 8px;
-		border: solid var(--accent);
-		color: var(--bg-color-400);
-		padding: 0.5em;
-		margin-top: 10px;
-		cursor: pointer;
-	}
-
-	@media screen and (max-width: 798px) {
-		button:not(:first-child) {
-			margin-top: 1em;
-		}
-	}
-
-	header {
-		margin: 0 auto;
-		width: 70%;
-		display: flex;
-		justify-content: space-between;
-	}
-
-	/* Dropdown*/
-	.dropdown {
-		position: relative;
-		display: inline-block;
-		z-index: 1;
-	}
-
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: var(--bg-color-400);
-		border-radius: 8px;
-		border: solid var(--accent);
-		& a {
-			color: #fff;
-			padding: 12px 16px;
-			text-decoration: none;
-			display: block;
-
-				&:hover {
-				background-color: #333333;
-				border-radius: 8px;
-			}
-		}
-	}
-
-	.dropdown:hover .dropdown-content {
-		display: block;
-	}
-</style>
+<header class="bg-bg_secondary p-6 flex items-center justify-between">
+	<a href="/" class="text-green-400 w-max text-2xl font-bold">Browser Copypasta</a>
+	<div class="buttons sm:mt-1 sm:first:mt-0">
+		<NavButton classes="mr-3 mdi mdi-clipboard-outline" fun={copyText}>
+			 Copy
+		</NavButton>
+		<a href="https://github.com/akisblack/browser-copypasta">
+			<NavButton classes="mdi mdi-github">
+				 GitHub
+			</NavButton>
+		</a>
+	</div>
+</header>
