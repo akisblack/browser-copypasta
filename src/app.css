@@ -9,7 +9,7 @@
 }
 
 body {
-	@apply bg-bg_primary font-font_primary overflow-hidden;
+	@apply bg-bg_primary font-font_primary;
 }
 
 .container {
