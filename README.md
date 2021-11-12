@@ -48,13 +48,15 @@ All other directories should be in the SvelteKit docs.
 ```
 
 ### Pasta metadata
-- "slug" is the link your pasta will be on ex: https://example.com/copypastas/my-browser.
+- "slug" is the link your pasta will be on ex: https://example.com/copypastas/example.
 
 - "title" should be self explanatory.
 
 - "name" is the pasta's title in capitals.
 
 - "published" is a boolean. If true the pasta will display otherwise it will stay unpublished and not accessible anywhere outside the source code.
+
+- "browser" is a boolean. If false the pasta card will display a tooltip that says "extra" to signify that it isn't a browser.
 
 ### Adding a copypasta
 Adding a copypasta is really simple as of v3. On this revision we handle the pastas in markdown files and thus make it really easy for the average user to add one.
@@ -69,6 +71,7 @@ Adding a copypasta is really simple as of v3. On this revision we handle the pas
 	title: Example Browser
 	name: EXAMPLE BROWSER
 	published: true
+	browser: true
 
 	for me its the <b name="insert">{name}</b>
 	---
@@ -77,7 +80,7 @@ Adding a copypasta is really simple as of v3. On this revision we handle the pas
 
 
 ### Submitting
-1. Make a GitHub account
+1. Make a GitHub account.
 2. Fork a project and push your changes to your fork.
 3. Make a pull request to the upstream `master` branch.
 4. Wait patiently for the project manager to review.
