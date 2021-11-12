@@ -9,13 +9,14 @@ const config = {
 			bg_secondary: "#292929",
 			bg_primary: "#111111",
 			green: colors.emerald,
-			white: "#c8c8c8"
+			white: "#c8c8c8",
+			black: colors.black,
 		},
 		fontFamily: {
-			font_primary: ["Raleway"]
+			font_primary: ["Raleway"],
 		},
 		screens: {
-			"sm": "449px"
+			"sm": "449px",
 		}
 	},
 

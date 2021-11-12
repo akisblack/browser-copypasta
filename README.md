@@ -7,7 +7,7 @@
 
 >Live version: https://browsercp.tk
 
-### A copypasta generator built with [SvelteKit](https://kit.svelte.dev). It uses MDsveX for markdown compiling and TailwindCSS for its CSS.
+### A copypasta generator built with [SvelteKit](https://kit.svelte.dev). It uses MDsveX for handling copypasta data and TailwindCSS for its CSS.
 
 ---
 
@@ -16,8 +16,8 @@
 ### Prerequisites
 
 - Install [node.js](https://nodejs.org).
-- Learn [Svelte](https://svelte.dev).
 - Install [pnpm](https://pnpm.io).
+- Learn [Svelte](https://svelte.dev).
 
 ### Install dependencies
 
@@ -48,15 +48,40 @@ All other directories should be in the SvelteKit docs.
 ```
 
 ### Pasta metadata
-- "slug" is the link your post will be on ex: https://example.com/blog/my-first-post.
+- "slug" is the link your pasta will be on ex: https://example.com/copypastas/my-browser.
 
 - "title" should be self explanatory.
 
 - "name" is the pasta's title in capitals.
 
-- "published" is a boolean. If true the post will display otherwise it will stay unpublished and not accessible anywhere outside the source code.
+- "published" is a boolean. If true the pasta will display otherwise it will stay unpublished and not accessible anywhere outside the source code.
+
+### Adding a copypasta
+Adding a copypasta is really simple as of v3. On this revision we handle the pastas in markdown files and thus make it really easy for the average user to add one.
+
+#### Making the file
+1. Make a .md file in the `src/routes/_data/` directory (preferably with your browser's name as a name for the file).
+2. Open the file in your text editor and add the following (see [Pasta metadata](#pasta-metadata))
+	
+	```md
+	---
+	slug: example
+	title: Example Browser
+	name: EXAMPLE BROWSER
+	published: true
+
+	for me its the <b name="insert">{name}</b>
+	---
+	```
+	>`<b name="insert">{name}</b>` You put this piece of html where you want the browser's name in capitals to be editable with the input GUI.
+
+
+### Submitting
+1. Make a GitHub account
+2. Fork a project and push your changes to your fork.
+3. Make a pull request to the upstream `master` branch.
+4. Wait patiently for the project manager to review.
 
 ---
-
 ## License
 This project is licensed under the MIT license.

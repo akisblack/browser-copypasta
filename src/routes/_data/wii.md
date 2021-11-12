@@ -3,6 +3,7 @@ slug: wii
 title: Wii Internet Channel
 name: WII INTERNET CHANNEL
 published: true
+browser: true
 ---
 
 For me, it's the <b name="insert">{name}</b>. The best internet browser. I even download the <b name="insert">{name}</b> on my wii, wii mini and wii rvl-101 because the <b name="insert">{name}</b> is so exploited and helps me hack my wii with amazing exploits (flashax)

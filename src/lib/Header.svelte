@@ -19,18 +19,27 @@
 	}
 
 	import NavButton from "./NavButton.svelte";
+	import SvelteTooltip from "svelte-tooltip";
 </script>
 
 <header class="bg-bg_secondary p-6 flex items-center justify-between">
 	<a href="/" class="text-green-400 w-max text-2xl font-bold">Browser Copypasta</a>
-	<div class="buttons sm:mt-1 sm:first:mt-0">
-		<NavButton classes="mr-3 mdi mdi-clipboard-outline" fun={copyText}>
-			 Copy
-		</NavButton>
-		<a href="https://github.com/akisblack/browser-copypasta">
-			<NavButton classes="mdi mdi-github">
-				 GitHub
-			</NavButton>
-		</a>
+	<div class="buttons text-green-400 text-md font-medium">
+
+		<SvelteTooltip tip="Copy" left color="#111111">
+			<NavButton classes="mr-3 mdi mdi-clipboard-outline" fun={copyText} />
+		</SvelteTooltip>
+
+		<SvelteTooltip tip="Add your own" left color="#111111">
+			<a href="https://github.com/akisblack/browser-copypasta/#adding-a-copypasta">
+				<NavButton classes="mr-3 mdi mdi-plus" />
+			</a>
+		</SvelteTooltip>
+
+		<SvelteTooltip tip="GitHub" left color="#111111">
+			<a href="https://github.com/akisblack/browser-copypasta">
+				<NavButton classes="mdi mdi-github gitbub" />
+			</a>
+		</SvelteTooltip>
 	</div>
 </header>

@@ -3,6 +3,7 @@ slug: brave
 title: Brave Browser
 name: BRAVE BROWSER
 published: true
+browser: true
 ---
 
 For me, it's the <b name="insert">{name}</b>. The best internet browser. I even download the <b name="insert">{name}</b> on my phone, tablet, laptop, and desktop because the <b name="insert">{name}</b> is so user friendly and helps fill my wallets with BAT (Basic Attention Token)
