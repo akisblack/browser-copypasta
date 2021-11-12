@@ -6,21 +6,28 @@ const config = {
 
 	theme: {
 		colors: {
-			bg_secondary: "#292929",
-			bg_primary: "#111111",
-			green: colors.emerald,
-			white: "#c8c8c8",
+			secondary: "#292929",
+			primary: "#111111",
+			greyish: "#c8c8c8",
+			transparent: 'transparent',
+			current: 'currentColor',
 			black: colors.black,
+			white: colors.white,
+			gray: colors.trueGray,
+			green: colors.emerald,
 		},
 		fontFamily: {
-			font_primary: ["Raleway"],
+			primary: ["Raleway"],
 		},
 		screens: {
-			"sm": "449px",
+			"sm": {"raw": "(max-width: 411px)"},
+		},
+		extend: {
+			backgroundImage: {
+				"search": "url(/search.svg)"
+			}
 		}
 	},
-
-	plugins: []
-};
+}
 
 module.exports = config;

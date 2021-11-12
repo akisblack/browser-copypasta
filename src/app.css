@@ -9,16 +9,9 @@
 }
 
 body {
-	@apply bg-bg_primary font-font_primary;
+	@apply bg-primary font-primary;
 }
 
 .container {
-	max-width: 80%;
-	@apply m-auto;
-}
-
-@media (max-width: 414px) {
-	.gitbub {
-		margin-top: 12px;
-	}
+	@apply m-auto max-w-[80%];
 }

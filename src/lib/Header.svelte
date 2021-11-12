@@ -22,8 +22,8 @@
 	import SvelteTooltip from "svelte-tooltip";
 </script>
 
-<header class="bg-bg_secondary p-6 flex items-center justify-between">
-	<a href="/" class="text-green-400 w-max text-2xl font-bold">Browser Copypasta</a>
+<header class="bg-secondary p-6 flex items-center justify-between">
+	<a href="/" class="text-green-400 w-max text-2xl font-bold pr-3">Browser Copypasta</a>
 	<div class="buttons text-green-400 text-md font-medium">
 
 		<SvelteTooltip tip="Copy" left color="#111111">
@@ -38,7 +38,7 @@
 
 		<SvelteTooltip tip="GitHub" left color="#111111">
 			<a href="https://github.com/akisblack/browser-copypasta">
-				<NavButton classes="mdi mdi-github gitbub" />
+				<NavButton classes="mdi mdi-github sm:mt-3" />
 			</a>
 		</SvelteTooltip>
 	</div>
