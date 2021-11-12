@@ -18,7 +18,7 @@ const config = {
             ssr: {
                 noExternal: [
 					"svelte-hero-icons",
-					"@icons-pack/svelte-simple-icons"
+					"svelte-simple-icons"
 				]
             }
         }
