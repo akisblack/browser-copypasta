@@ -22,7 +22,7 @@
 	import SvelteTooltip from "svelte-tooltip";
 	import { Clipboard, PlusCircle } from "svelte-hero-icons";
 	import Icon from "svelte-hero-icons/Icon.svelte";
-	import GitHub from '@icons-pack/svelte-simple-icons/src/components/GitHub.svelte';
+	import GitHub from "@icons-pack/svelte-simple-icons/src/components/GitHub.svelte";
 </script>
 
 <header class="bg-secondary p-6 flex items-center justify-between">

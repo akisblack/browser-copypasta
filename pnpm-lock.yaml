@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@icons-pack/svelte-simple-icons': github:icons-pack/svelte-simple-icons#v2.2.0
+  '@icons-pack/svelte-simple-icons': github:icons-pack/svelte-simple-icons
   '@sveltejs/adapter-static': next
   '@sveltejs/kit': next
   autoprefixer: ^10.3.7
@@ -25,7 +25,7 @@ specifiers:
   tailwindcss: ^2.2.16
 
 devDependencies:
-  '@icons-pack/svelte-simple-icons': github.com/icons-pack/svelte-simple-icons/bcaac906d0bb1c786ccf1a20929c5c311020ab80
+  '@icons-pack/svelte-simple-icons': github.com/icons-pack/svelte-simple-icons/dd6cc98ef67c1e6d24a0d3969e57ccece22e29d8
   '@sveltejs/adapter-static': 1.0.0-next.21
   '@sveltejs/kit': 1.0.0-next.196_svelte@3.44.1
   autoprefixer: 10.4.0_postcss@8.3.9
@@ -2635,10 +2635,10 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  github.com/icons-pack/svelte-simple-icons/bcaac906d0bb1c786ccf1a20929c5c311020ab80:
-    resolution: {tarball: https://codeload.github.com/icons-pack/svelte-simple-icons/tar.gz/bcaac906d0bb1c786ccf1a20929c5c311020ab80}
+  github.com/icons-pack/svelte-simple-icons/dd6cc98ef67c1e6d24a0d3969e57ccece22e29d8:
+    resolution: {tarball: https://codeload.github.com/icons-pack/svelte-simple-icons/tar.gz/dd6cc98ef67c1e6d24a0d3969e57ccece22e29d8}
     name: '@icons-pack/svelte-simple-icons'
-    version: 1.9.0
+    version: 2.3.0
     dependencies:
       svelte: 3.44.1
     dev: true
