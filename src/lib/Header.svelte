@@ -20,9 +20,7 @@
 
 	import NavButton from "./NavButton.svelte";
 	import SvelteTooltip from "svelte-tooltip";
-	import { Clipboard, PlusCircle } from "svelte-hero-icons";
-	import Icon from "svelte-hero-icons/Icon.svelte";
-	import GitHub from "@icons-pack/svelte-simple-icons/src/components/GitHub.svelte";
+	import Icon from "@iconify/svelte";
 </script>
 
 <header class="bg-secondary p-6 flex items-center justify-between">
@@ -30,18 +28,18 @@
 	<div class="buttons text-green-400 text-md font-medium">
 
 		<SvelteTooltip tip="Copy" left color="#111111">
-			<NavButton classes="mr-3" fun={copyText}><Icon src="{Clipboard}" size="16" outline /></NavButton>
+			<NavButton classes="mr-3" fun={copyText}><Icon icon="feather:clipboard" height={16} inline={true} /></NavButton>
 		</SvelteTooltip>
 
 		<SvelteTooltip tip="Add your own" left color="#111111">
 			<a href="https://github.com/akisblack/browser-copypasta/#adding-a-copypasta">
-				<NavButton classes="mr-3"><Icon src="{PlusCircle}" size="16" outline /></NavButton>
+				<NavButton classes="mr-3"><Icon icon="feather:plus-circle" height={16} inline={true} /></NavButton>
 			</a>
 		</SvelteTooltip>
 
 		<SvelteTooltip tip="GitHub" left color="#111111">
 			<a href="https://github.com/akisblack/browser-copypasta">
-				<NavButton classes="sm:mt-3"><GitHub color="#292929" size={16} /></NavButton>
+				<NavButton classes="sm:mt-3"><Icon icon="feather:github" height={16} inline={true} /></NavButton>
 			</a>
 		</SvelteTooltip>
 	</div>

@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@icons-pack/svelte-simple-icons': github:icons-pack/svelte-simple-icons
+  '@iconify/svelte': ^2.1.0
   '@sveltejs/adapter-static': next
   '@sveltejs/kit': next
   autoprefixer: ^10.3.7
@@ -19,13 +19,12 @@ specifiers:
   prettier: ^2.4.1
   prettier-plugin-svelte: ^2.4.0
   svelte: ^3.42.6
-  svelte-hero-icons: ^3.0.0
   svelte-preprocess: ^4.9.8
   svelte-tooltip: ^1.2.0
   tailwindcss: ^2.2.16
 
 devDependencies:
-  '@icons-pack/svelte-simple-icons': github.com/icons-pack/svelte-simple-icons/dd6cc98ef67c1e6d24a0d3969e57ccece22e29d8
+  '@iconify/svelte': 2.1.0
   '@sveltejs/adapter-static': 1.0.0-next.21
   '@sveltejs/kit': 1.0.0-next.196_svelte@3.44.1
   autoprefixer: 10.4.0_postcss@8.3.9
@@ -43,7 +42,6 @@ devDependencies:
   prettier: 2.4.1
   prettier-plugin-svelte: 2.4.0_prettier@2.4.1+svelte@3.44.1
   svelte: 3.44.1
-  svelte-hero-icons: 3.0.0
   svelte-preprocess: 4.9.8_dfd98b5a37deb4777317386ea0ae7933
   svelte-tooltip: 1.2.0
   tailwindcss: 2.2.19_2dfa4b15026266bfcfa4978254474c81
@@ -100,6 +98,12 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iconify/svelte/2.1.0:
+    resolution: {integrity: sha512-p2e42XCAGohnRRhnB/GouMXJtnlUQlbaqC3FEg7+aDOhqA0zGvNJzbvIW1TQJZpW5Leij5UcGP5ImQ5SZ8vJmQ==}
+    dependencies:
+      cross-fetch: 3.1.4
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
@@ -504,6 +508,12 @@ packages:
       parse-json: 5.2.0
       path-type: 4.0.0
       yaml: 1.10.2
+    dev: true
+
+  /cross-fetch/3.1.4:
+    resolution: {integrity: sha512-1eAtFWdIubi6T4XPy6ei9iUFoKpUkIF971QLN8lIvvvwueI65+Nw5haMNKUwfJxabqlIIDODJKGrQ66gxC0PbQ==}
+    dependencies:
+      node-fetch: 2.6.1
     dev: true
 
   /cross-spawn/7.0.3:
@@ -1522,6 +1532,11 @@ packages:
       lodash: 4.17.21
     dev: true
 
+  /node-fetch/2.6.1:
+    resolution: {integrity: sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==}
+    engines: {node: 4.x || >=6.0.0}
+    dev: true
+
   /node-releases/2.0.1:
     resolution: {integrity: sha512-CqyzN6z7Q6aMeF/ktcMVTzhAHCEpf8SOarwpzpf8pNBY2k5/oM34UHldUwp8VKI7uxct2HxSRdJjBaZeESzcxA==}
     dev: true
@@ -2356,10 +2371,6 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /svelte-hero-icons/3.0.0:
-    resolution: {integrity: sha512-QivdVBK5dhUaxGq+GwBCW2EkhCFun4I1kJ22lu9b3dz7M2YJQXWsjwsNu4FIVQ1wBuPkaHAg9mdZeM7KV8fDIA==}
-    dev: true
-
   /svelte-hmr/0.14.7_svelte@3.44.1:
     resolution: {integrity: sha512-pDrzgcWSoMaK6AJkBWkmgIsecW0GChxYZSZieIYfCP0v2oPyx2CYU/zm7TBIcjLVUPP714WxmViE9Thht4etog==}
     peerDependencies:
@@ -2633,12 +2644,4 @@ packages:
   /yaml/1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
-    dev: true
-
-  github.com/icons-pack/svelte-simple-icons/dd6cc98ef67c1e6d24a0d3969e57ccece22e29d8:
-    resolution: {tarball: https://codeload.github.com/icons-pack/svelte-simple-icons/tar.gz/dd6cc98ef67c1e6d24a0d3969e57ccece22e29d8}
-    name: '@icons-pack/svelte-simple-icons'
-    version: 2.3.0
-    dependencies:
-      svelte: 3.44.1
     dev: true

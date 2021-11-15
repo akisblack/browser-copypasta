@@ -35,8 +35,7 @@
 
 	import NavButton from "$lib/NavButton.svelte";
 	import SvelteTooltip from "svelte-tooltip";
-	import { InformationCircle } from "svelte-hero-icons";
-	import Icon from "svelte-hero-icons/Icon.svelte";
+	import Icon from "@iconify/svelte";
 </script>
 
 <div class="text-center mt-[15%] text-greyish">
@@ -52,7 +51,7 @@
 						{#if !browser}
 							<div class="text-green-400 inline-block">
 								<SvelteTooltip tip="Extra" top color="#111111">
-									<Icon src="{InformationCircle}" size="16" outline class="text-secondary items-center"/>
+									<Icon icon="feather:info" inline={true} height={16} class="text-secondary items-center"/>
 								</SvelteTooltip>
 							</div>
 						{/if}
