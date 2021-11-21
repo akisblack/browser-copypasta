@@ -79,7 +79,7 @@ Adding a copypasta is really simple as of v3. On this revision we handle the pas
 	>`<b name="insert">{name}</b>` You put this piece of html where you want the browser's name in capitals to be editable with the input GUI.
 
 
-### Submitting
+#### Submitting
 1. Make a GitHub account.
 2. Fork a project and push your changes to your fork.
 3. Make a pull request to the upstream `master` branch.
