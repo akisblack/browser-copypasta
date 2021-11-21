@@ -58,6 +58,8 @@ All other directories should be in the SvelteKit docs.
 
 - "browser" is a boolean. If false the pasta card will display a tooltip that says "extra" to signify that it isn't a browser.
 
+- "icon" contains an icon id respective to your browser obtained from https://icon-sets.iconify.design/.
+
 ### Adding a copypasta
 Adding a copypasta is really simple as of v3. On this revision we handle the pastas in markdown files and thus make it really easy for the average user to add one.
 
@@ -72,6 +74,7 @@ Adding a copypasta is really simple as of v3. On this revision we handle the pas
 	name: EXAMPLE BROWSER
 	published: true
 	browser: true
+	icon: icon-park-outline:h
 
 	for me its the <b name="insert">{name}</b>
 	---

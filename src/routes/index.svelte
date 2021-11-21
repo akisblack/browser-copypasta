@@ -42,12 +42,12 @@
 	<h1 class="font-normal text-3xl">The <span class="text-green-400 font-bold">BEST</span> copypasta generator for shilling browsers</h1>
 	<p class="leading-6 text-xl mt-1">Choose a browser from the list below to start <span class="text-green-400 font-bold">spammin'</span>.</p>
 
-	{#each pastas as { slug, title, published, browser }}
+	{#each pastas as { slug, title, icon, published, browser }}
 		{#if published}
 			<div class="ml-3 first:ml-0 inline-flex items-center mt-4 m-auto">
 				<a rel="prefetch" href="copypastas/{slug}">
 					<NavButton classes="text-xl font-medium">
-						{title} 
+						<span><Icon {icon} height={16} class="text-secondary items-center inline-flex mb-1 mr-1"/>{title}</span>
 						{#if !browser}
 							<div class="text-green-400 inline-block">
 								<SvelteTooltip tip="Extra" top color="#111111">

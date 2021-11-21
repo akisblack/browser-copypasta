@@ -4,6 +4,7 @@ title: Vivaldi
 name: VIVALDI BROWSER
 published: true
 browser: true
+icon: simple-icons:vivaldi
 ---
 
 For me, it's the <b name="insert">{name}</b>. The best internet browser. I even download the <b name="insert">{name}</b> on my phone, tablet, laptop, and desktop because the <b name="insert">{name}</b> is so user friendly and helps fill my workflow with awesome tab features (Tab Stacks & Tab Tilling)

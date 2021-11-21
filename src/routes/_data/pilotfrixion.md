@@ -4,6 +4,7 @@ title: Pilot Frixion Pen
 name: PILOT FRIXION PEN
 published: true
 browser: false
+icon: feather:pen-tool
 ---
 
 For me, it's the <b name="insert">{name}</b>. The best pen. I even write using the <b name="insert">{name}</b> on my exams, notes, letters, and homework because the <b name="insert">{name}</b> is so user friendly and helps fill my workflow with awesome writing features (Replaceable Ink & Erasable Writing)
