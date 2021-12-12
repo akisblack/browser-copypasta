@@ -1,3 +1,8 @@
+<script>
+	import "../app.css";
+	import Header from "$lib/Header.svelte";
+</script>
+
 <svelte:head>
 	<!--Imports and viewport stuff-->
 	<meta charset="utf-8" />
@@ -10,11 +15,6 @@
 	<meta name="description" content="The copypasta generator for web browsers!" />
 	<meta name="author" content="akisblack" />
 </svelte:head>
-
-<script>
-	import "../app.css";
-	import Header from "$lib/Header.svelte";
-</script>
 
 <Header />
 <slot />
