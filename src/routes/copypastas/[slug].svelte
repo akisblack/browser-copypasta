@@ -2,10 +2,10 @@
 	/**
 	 * @type {import('@sveltejs/kit').Load}
 	 */
-	export async function load({ page }) {
+	export async function load({ params }) {
 		return {
 			props: {
-				Pasta: await import(`../_data/${page.params.slug}.md`)
+				Pasta: await import(`../_data/${params.slug}.md`)
 			}
 		};
 	}
