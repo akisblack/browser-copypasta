@@ -1,0 +1,139 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-701be669.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor-bbf2b5c3.js",
+      "_preload-helper-ec9aa979.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/index.svelte",
+      "src/routes/copypastas/[slug].svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-1e59453f.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-bbf2b5c3.js",
+      "_NavButton-86835f84.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-653ad982.css"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "error.svelte-5c138fc2.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-bbf2b5c3.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-6fb20447.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-ec9aa979.js",
+      "_vendor-bbf2b5c3.js",
+      "_NavButton-86835f84.js"
+    ],
+    "dynamicImports": [
+      "src/routes/_data/brave.md",
+      "src/routes/_data/china.md",
+      "src/routes/_data/firefox.md",
+      "src/routes/_data/pilotfrixion.md",
+      "src/routes/_data/vivaldi.md",
+      "src/routes/_data/wii.md"
+    ]
+  },
+  "src/routes/copypastas/[slug].svelte": {
+    "file": "pages/copypastas/_slug_.svelte-8e8bc0c7.js",
+    "src": "src/routes/copypastas/[slug].svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-ec9aa979.js",
+      "_vendor-bbf2b5c3.js"
+    ],
+    "dynamicImports": [
+      "src/routes/_data/brave.md",
+      "src/routes/_data/china.md",
+      "src/routes/_data/firefox.md",
+      "src/routes/_data/pilotfrixion.md",
+      "src/routes/_data/vivaldi.md",
+      "src/routes/_data/wii.md"
+    ]
+  },
+  "_vendor-bbf2b5c3.js": {
+    "file": "chunks/vendor-bbf2b5c3.js",
+    "css": [
+      "assets/vendor-571e52e5.css"
+    ]
+  },
+  "_preload-helper-ec9aa979.js": {
+    "file": "chunks/preload-helper-ec9aa979.js"
+  },
+  "_NavButton-86835f84.js": {
+    "file": "chunks/NavButton-86835f84.js",
+    "imports": [
+      "_vendor-bbf2b5c3.js"
+    ]
+  },
+  "src/routes/_data/brave.md": {
+    "file": "chunks/brave-3a71dfc6.js",
+    "src": "src/routes/_data/brave.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-bbf2b5c3.js"
+    ]
+  },
+  "src/routes/_data/china.md": {
+    "file": "chunks/china-f0f5755f.js",
+    "src": "src/routes/_data/china.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-bbf2b5c3.js"
+    ]
+  },
+  "src/routes/_data/firefox.md": {
+    "file": "chunks/firefox-5e504c1c.js",
+    "src": "src/routes/_data/firefox.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-bbf2b5c3.js"
+    ]
+  },
+  "src/routes/_data/pilotfrixion.md": {
+    "file": "chunks/pilotfrixion-b7b842c2.js",
+    "src": "src/routes/_data/pilotfrixion.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-bbf2b5c3.js"
+    ]
+  },
+  "src/routes/_data/vivaldi.md": {
+    "file": "chunks/vivaldi-226578c6.js",
+    "src": "src/routes/_data/vivaldi.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-bbf2b5c3.js"
+    ]
+  },
+  "src/routes/_data/wii.md": {
+    "file": "chunks/wii-5462ef8c.js",
+    "src": "src/routes/_data/wii.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-bbf2b5c3.js"
+    ]
+  }
+}
