@@ -20,7 +20,7 @@
 		"html-minifier": "^4.0.0",
 		"mdsvex": "^0.9.8",
 		"postcss": "^8.4.5",
-		"postcss-load-config": "^3.1.1",
+		"postcss-load-config": "^4.0.1",
 		"postcss-nested": "^5.0.6",
 		"postcss-scss": "^4.0.3",
 		"postcss-short": "^5.0.0",
